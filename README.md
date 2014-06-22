@@ -14,7 +14,7 @@ Running application
 
 The application will listen on port 8080.
 
-You can execute the following curl:
+You can execute the following curl commands to read the properties:
 
 ```
 curl http://localhost:8080/config1
@@ -29,3 +29,12 @@ etcdctl set testApp/config2 "123" # this should be an integer
 ```
 
 After restarting spring application the new values should be returned, when executing curl commands above.
+
+Project Structure
+-----
+
+* [Main class](src/main/java/com/rodrigosaito/Application.java)
+* [Config file](src/main/resources/config.properties)
+
+
+
